@@ -20,12 +20,10 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
 ```
 
-##### creat postcss file
-
+##### creat postcss config file 
 ```
-npm run build -p
+npx postcss init 
 ```
-
 ### use this code in **packege.json** file for _build_
 
 ###### use your own file
@@ -51,8 +49,19 @@ module.exports = {
 
 ```
 
-#### Run taliwindcss
+#### creat .vscode folder  and in there  creat settings.json file , add this in that file 
+###### this for tailwindcss auto complate and it's not gonna show error 
 
 ```
-npm run build
+{
+  "css.validate": false,
+  "tailwindCSS.emmetCompletions": true
+}
+
+```
+
+#### Run taliwindcss by post css 
+
+```
+npm run build -p 
 ```
