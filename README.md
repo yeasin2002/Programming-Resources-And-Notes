@@ -30,7 +30,7 @@ npx tailwindcss init -p
 
 ```
 "scripts": {
-    "build": "tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
+    "build": " npx tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
     "build-p": "postcss ./src/tailwind.css  -o ./public/style.css -w"
   },
 ```
