@@ -22,7 +22,7 @@ npx tailwindcss init
 
 ##### creat postcss config file 
 ```
-npx postcss init 
+npx postcss init -p
 ```
 ### use this code in **packege.json** file for _build_
 
