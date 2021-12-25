@@ -38,7 +38,7 @@ npx tailwindcss init -p
 ```
 
 
-
+#### use this code on  your scripts tag  on your  package.json file  
 ```
 "scripts": {
     "build": " npx tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
