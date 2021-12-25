@@ -29,7 +29,7 @@ npx tailwindcss init -p
 #### creat a public  folder  and creata index.html file  and a **style.css** file 
 #### then  creat a src folder  and on there creat a **tailwind.css** file 
 
-#### add this im your **tailwind.css** file 
+#### add this in your **tailwind.css** file 
 ###### *(note: you can name it whatever you want and creat or creat  all file where where you want)*
 ```
 @tailwind base;
