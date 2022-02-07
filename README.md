@@ -31,24 +31,22 @@ npx tailwindcss init -p
 
 #### add this in your **tailwind.css** file 
 ###### *(note: you can name it whatever you want and creat or creat  all file where where you want)*
-```
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
 
 
-#### use this code on  your scripts tag  on your  package.json file  
-```
-"scripts": {
+#### use this code on  your scripts tag  on your  package.json file   ( on scripts tag)
+```json
     "build": " npx tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
     "build-p": "postcss ./src/tailwind.css  -o ./public/style.css -w"
-  },
 ```
 
 ### use this code in **tailwind.config.js file** for _JIT MODE_
 
-```
+```json
 module.exports = {
   mode: "jit",
   content: ["./public/**/*.html"],
@@ -63,7 +61,7 @@ module.exports = {
 #### creat .vscode folder  and in there  creat settings.json file , add this in that file 
 ###### this for tailwindcss auto complate and it's not gonna show error 
 
-```
+```jsob
 {
   "css.validate": false,
   "tailwindCSS.emmetCompletions": true
