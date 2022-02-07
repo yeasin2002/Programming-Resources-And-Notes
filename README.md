@@ -76,3 +76,15 @@ module.exports = {
 ```
 npm run build -p 
 ```
+
+
+# Automatic Class Sorting with Prettier
+```npm
+npm install --save-dev prettier-plugin-tailwind-css
+```
+ ```yarn
+ yarn add -D prettier-plugin-tailwind-css
+ ```
+
+
+#### Add "removeDuplicatesClasses" in  json file to remove duplicate  class  
