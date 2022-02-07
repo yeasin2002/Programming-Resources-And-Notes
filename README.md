@@ -46,7 +46,7 @@ npx tailwindcss init -p
 
 ### use this code in **tailwind.config.js file** for _JIT MODE_
 
-```json
+```
 module.exports = {
   mode: "jit",
   content: ["./public/**/*.html"],
