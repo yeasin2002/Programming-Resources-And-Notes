@@ -88,3 +88,6 @@ npm install --save-dev prettier-plugin-tailwind-css
 
 
 #### Add "removeDuplicatesClasses" in  json file to remove duplicate  class  
+```json
+"removeDuplicatesClasses" : true,
+```
