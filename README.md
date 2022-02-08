@@ -46,7 +46,7 @@ npx tailwindcss init -p
 
 ### use this code in **tailwind.config.js file** for _JIT MODE_
 
-```
+```javaScript
 module.exports = {
   mode: "jit",
   content: ["./public/**/*.html"],
@@ -61,7 +61,7 @@ module.exports = {
 #### creat .vscode folder  and in there  creat settings.json file , add this in that file 
 ###### this for tailwindcss auto complate and it's not gonna show error 
 
-```jsob
+```json
 {
   "css.validate": false,
   "tailwindCSS.emmetCompletions": true
@@ -77,15 +77,25 @@ npm run build -p
 
 
 # Automatic Class Sorting with Prettier
-```npm
+ #### install prettier Extension from VS Code Marketplace   Or using CLI command 
+```
 npm install --save-dev prettier-plugin-tailwind-css
 ```
- ```yarn
+ ```
  yarn add -D prettier-plugin-tailwind-css
  ```
-
+----------
+## Using prettier  with tailwind in your workspace 
+### Create a file  in this name 
+```
+.prettierrc.json
+```
+## use this command to run pretteir in your project  ( for all file use a dot . or use your file name  )
+```
+npx prettier --write . 
+```
 
 #### Add "removeDuplicatesClasses" in  json file to remove duplicate  class  
-```json
+```
 "removeDuplicatesClasses" : true,
 ```
