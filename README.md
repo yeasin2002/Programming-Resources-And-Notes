@@ -77,7 +77,7 @@ npm run build -p
 
 
 # Automatic Class Sorting with Prettier
- #### install prettier Extension from VS Code Marketplace   Or using CLI command 
+ #### install prettier Extension from VS Code Marketplace   and install in your project  using CLI commands 
 ```
 npm install --save-dev prettier-plugin-tailwind-css
 ```
