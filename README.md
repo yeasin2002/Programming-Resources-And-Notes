@@ -1,8 +1,8 @@
-# Tailwindcss install with JIT mode
+# Tailwindcss install - STEP BY STEP
 
 ## install process
 
-##### initialise npm emty file
+##### initialise npm  file
 
 ```
 npm init -y
