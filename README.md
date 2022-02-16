@@ -1,33 +1,33 @@
-# Tailwindcss install - STEP BY STEP
+# Tailwindcss install with JIT mode
 
 ## install process
 
-##### initialise npm  file
+##### initialise npm empty file
 
 ```
 npm init -y
 ```
 
-##### install tailwindcss by postcss with auto prefixer
+##### install tailwindcss by postcss with auto prefixed
 
 ```
 npm install -D tailwindcss postcss autoprefixer
 ```
 
-##### creat tailwincs config file
+##### create  Tailwind config file
 
 ```
 npx tailwindcss init
 ```
 
-##### creat postcss config file 
+##### create postcss config file 
 ```
 npx tailwindcss init -p
 ```
 ### use this code in **packege.json** file for _build_
 
-#### creat a public  folder  and creata index.html file  and a **style.css** file 
-#### then  creat a src folder  and on there creat a **tailwind.css** file 
+#### create a public  folder  and create index.html file  and a **style.css** file 
+#### then  create a src folder  and on there create a **tailwind.css** file 
 
 #### add this in your **tailwind.css** file 
 ###### *(note: you can name it whatever you want and creat or creat  all file where where you want)*
@@ -44,12 +44,12 @@ npx tailwindcss init -p
     "build-p": "postcss ./src/tailwind.css  -o ./public/style.css -w"
 ```
 
-### use this code in **tailwind.config.js file** for _JIT MODE_
+### Add the paths to all of your template files in your **tailwind.config.js** file.
 
 ```javaScript
 module.exports = {
-  mode: "jit",
-  content: ["./public/**/*.html"],
+  content: ["./src/**/*.{html,js}"],
+  // no need this from here this are for example  , just need to add this path 
   theme: {
     extend: {},
   },
@@ -58,8 +58,8 @@ module.exports = {
 
 ```
 
-#### creat .vscode folder  and in there  creat settings.json file , add this in that file 
-###### this for tailwindcss auto complate and it's not gonna show error 
+#### create .vscode folder  and in there  creat settings.json file , add this in that file 
+###### this for tailwindcss auto complete and it's not gonna show error 
 
 ```json
 {
@@ -69,7 +69,7 @@ module.exports = {
 
 ```
 
-#### Run taliwindcss by post css 
+#### Run Tailwind CSS by postCSS 
 
 ```
 npm run build -p 
@@ -77,7 +77,7 @@ npm run build -p
 
 
 # Automatic Class Sorting with Prettier
- #### install prettier Extension from VS Code Marketplace   and install in your project  using CLI commands 
+ #### install prettier Extension from VS Code Marketplace   Or using CLI command 
 ```
 npm install --save-dev prettier-plugin-tailwind-css
 ```
