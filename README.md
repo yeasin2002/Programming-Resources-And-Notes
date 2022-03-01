@@ -1,8 +1,7 @@
-# Tailwindcss install with JIT mode
-
+# Tailwindcss install Stap by Stap by postCSS 
 ## install process
 
-##### initialise npm empty file
+##### initialize npm empty file
 
 ```
 npm init -y
@@ -14,7 +13,7 @@ npm init -y
 npm install -D tailwindcss postcss autoprefixer
 ```
 
-##### create  Tailwind config file
+##### create Tailwindcss config file
 
 ```
 npx tailwindcss init
@@ -30,7 +29,7 @@ npx tailwindcss init -p
 #### then  create a src folder  and on there create a **tailwind.css** file 
 
 #### add this in your **tailwind.css** file 
-###### *(note: you can name it whatever you want and creat or creat  all file where where you want)*
+###### *(note: you can name it whatever you want and create or create all file where you want) *
 ```css
 @tailwind base;
 @tailwind components;
@@ -38,7 +37,7 @@ npx tailwindcss init -p
 ```
 
 
-#### use this code on  your scripts tag  on your  package.json file   ( on scripts tag)
+#### use this code on your scripts tag on your  package.json file   ( on scripts tag)
 ```json
     "build": " npx tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
     "build-p": "postcss ./src/tailwind.css  -o ./public/style.css -w"
@@ -58,8 +57,8 @@ module.exports = {
 
 ```
 
-#### create .vscode folder  and in there  creat settings.json file , add this in that file 
-###### this for tailwindcss auto complete and it's not gonna show error 
+#### create .vscode folder  and in there  create settings.json file , add this in that file 
+###### this for tailwindCSS auto-complete and it's not going to show error 
 
 ```json
 {
@@ -69,7 +68,7 @@ module.exports = {
 
 ```
 
-#### Run Tailwind CSS by postCSS 
+#### Run Tailwind CSS by post CSS 
 
 ```
 npm run build -p 
@@ -85,17 +84,18 @@ npm install --save-dev prettier-plugin-tailwind-css
  yarn add -D prettier-plugin-tailwind-css
  ```
 ----------
-## Using prettier  with tailwind in your workspace 
-### Create a file  in this name 
+## Using prettier with tailwind in your workspace 
+### Create a file in this name 
 ```
 .prettierrc.json
 ```
-## use this command to run pretteir in your project  ( for all file use a dot . or use your file name  )
+## use this command to run pretteir in your project (for all file use a dot. or use your file name)
 ```
 npx prettier --write . 
 ```
 
-#### Add "removeDuplicatesClasses" in  json file to remove duplicate  class  
+#### Add "removeDuplicatesClasses" in  Json file to remove duplicate class  
 ```
-"removeDuplicatesClasses" : true,
+{ "removeDuplicatesClasses": true }
 ```
+
