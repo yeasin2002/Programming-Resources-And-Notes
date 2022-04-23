@@ -10,8 +10,9 @@ npm init -y
 ##### install tailwindcss by postcss with auto prefixed
 
 ```
-npm install -D tailwindcss postcss autoprefixer
+npm install -D tailwindcss postcss autoprefixer cssnano cssnano-preset-advanced
 ```
+
 
 ##### create Tailwindcss config file
 
@@ -23,6 +24,24 @@ npx tailwindcss init
 ```
 npx tailwindcss init -p
 ```
+
+
+
+###After creating postcss.config.json file add {$this} code in there
+
+```js
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+    cssnano: {
+      preset: "advanced",
+    },
+  },
+};
+
+```
+
 ### use this code in **packege.json** file for _build_
 
 #### create a public  folder  and create index.html file  and a **style.css** file 
