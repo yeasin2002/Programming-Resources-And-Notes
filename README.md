@@ -12,7 +12,7 @@ npm install -D  postcss  postcss-cli autoprefixer cssnano cssnano-preset-advance
 
 ### use this **postcss.config.json** file
 
-```
+```js 
 module.exports = {
   plugins: {
     autoprefixer: {},
@@ -25,15 +25,15 @@ module.exports = {
 ```
 
 ### use this in **package.json** on **script** tag
+# you can use deferent file path as you want But make sure to writw correct path here 
 
-```
+```json
 "build": "postcss ./src/style.pcss  -o ./public/style.css -w"
 ```
 
 ### Write This code in workspace setting.json
 
-```
-// postcss
+```json
 
 "postcss.validate": false,
 "emmet.includeLanguages": {
@@ -43,15 +43,21 @@ module.exports = {
 
 ---
 
+
+### Now Open Terminals And  Write This command And Hit Enter 
+```
+npm run  postcss 
+```
+ 
 ## More Info:
 
 - [Official Doc](https://postcss.org/)
 
-- [Official Github Repo](https://github.com/postcss/postcss)
+- [Official Github repository](https://github.com/postcss/postcss)
 
 - [My Github ](https://github.com/Mdkawsarislam2002/tailwindcss-installations)
 
-- [Postcss-Cli github repo ](https://github.com/postcss/postcss-cli)
+- [Postcss-Cli github repository ](https://github.com/postcss/postcss-cli)
 
 ### Some PostCSS plugging
 
@@ -61,4 +67,15 @@ module.exports = {
 - [cssNext](https://cssnext.github.io/)
 - [Stylelint github](https://github.com/stylelint/stylelint)
 - [stylelint Official doc](https://stylelint.io/)
-- [autoprefixer Official github rep ](https://github.com/postcss/autoprefixer)
+- [autoprefixer Official github repository  ](https://github.com/postcss/autoprefixer)
+- [Find All Plunging Fore Here ](https://www.postcss.parts/)
+- [Import plugging ](https://github.com/postcss/postcss-import)
+- [SASS Like Import ](https://github.com/csstools/postcss-partial-import)
+- [media min-max](https://github.com/postcss/postcss-media-minmax)
+- [PostCSS Nesting](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting)
+ 
+### Tutorials 
+- [PostCSS Crush Course ](https://youtu.be/RuLrIJJzt60)
+- [ PostCSS  in 100 second ](https://youtu.be/WhCXiEwdU1A)
+- [ Bacic Overview of PostCSS](https://youtu.be/WhCXiEwdU1A) 
+- [ PostCSS Playlists With Gulp](https://youtube.com/playlist?list=PLLnpHn493BHFvjZzyYrQP0RTsG-Al7j9m)
