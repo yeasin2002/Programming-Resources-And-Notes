@@ -46,7 +46,7 @@ module.exports = {
 
 ### Now Open Terminals And  Write This command And Hit Enter 
 ```
-npm run  postcss 
+npm run  build 
 ```
  
 ## More Info:
