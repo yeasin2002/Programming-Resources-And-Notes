@@ -1,9 +1,12 @@
-##  Free Bangla Resources - Cource and Books
- ###  [Courses](#Courses)
- ### [Books](#Books)
+###  Free Bangla Resources  ❤
+   #### ✅  [Courses](#Courses)
+   
+  #### ✅ [Books](#Books)
+  
+  #### ✅ [API](#API)
  
  ---
- # Courses
+ # ✔ Courses
  
  ### Index
 
@@ -182,7 +185,7 @@
 
 ---
 
-# Books 
+# ✔ Books 
 ### Index
 
 -   [Algorithms](#algorithms)
@@ -241,4 +244,16 @@
 
 
 
+# ✔  API 
+
+🔴 292+ Free API 🤯 
+👉 https://publicapis.dev/
+
+🟡   Movie API:
+👉  https://www.themoviedb.org/
+
+
+🔵 Basic API's 
+👉 https://apipheny.io/free-api/
+👉  https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
 
