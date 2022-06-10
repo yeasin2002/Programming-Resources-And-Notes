@@ -117,4 +117,20 @@ npx prettier --write .
 ```
 { "removeDuplicatesClasses": true }
 ```
+--- 
+
+## More: 
+
+####  Learning recources 
+[Official Doc](https://tailwindcss.com/docs/installation) - Learn With Sumit 
+
+[Tailwind CSS Bangla Tutorial Series](https://youtube.com/playlist?list=PLHiZ4m8vCp9P23SqlHL0QAqiwS_oCofV2)
+[Tailwind Lab - Official Tailwindcss You Tube Channel ](https://www.youtube.com/c/TailwindLabs)
+#### TailwindCSS Tools and Conmonent 
+[Headless UI - React an dvue Componetn ](https://headlessui.dev/)
+
+[Hero Icons - Free SVG TailwindCSS icon](https://heroicons.dev/)
+
+[Flwbite -Tailwincss Component ](https://flowbite.com/)
+
 
