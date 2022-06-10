@@ -30,6 +30,7 @@ npx tailwindcss init -p
 ###After creating postcss.config.json file add {$this} code in there
 
 ```js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   plugins: {
     tailwindcss: {},
