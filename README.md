@@ -1,6 +1,6 @@
-<h1 align="center">🔰 Programming Resources And Note 🔰</h1>
+<h2 align="center">🔰 Programming Resources And Note 🔰</h1>
 
-### ❤ See Branches and get What You need
+### ❤ See Others  Branches and get What You need
 
   <img src="https://img.shields.io/badge/Github Branches-323330?style=for-the-badge&logo=Github&logoColor=007ACC" />
 
@@ -25,14 +25,14 @@
 
 ---
 
-###🔰 If this Repo is Helpful For you Then hit The Star Button.
-⚠ If You Found anything Wrong Then Fork this repo and send a pull request
+### 🔰 If this Repo is Helpful For you Then hit The Star Button.
+ ### ⚠️ If You Found anything Wrong Then Fork this repo and send a pull request
 
   <img src="https://img.shields.io/badge/markdown-5E5C5C?style=for-the-badge&logo=markdown&logoColor=white" />
 
 ---
 
-### Find me Here
+### Find me Here:
 
  <a href="https://twitter.com/mdkawsar2002">
        <img src="https://img.shields.io/badge/@MdKawsar2002-323330?style=for-the-badge&logo=twitter&logoColor=white" />
