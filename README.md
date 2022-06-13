@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/87494463/173291569-6d5011de-a2b0-481e-9654-3faed32cf948.png)
+
+
 # Tailwindcss install Stap by Stap by postCSS 
 ## install process
 
@@ -58,6 +61,10 @@ module.exports = {
 
 
 #### use this code on your scripts tag on your  package.json file   ( on scripts tag)
+
+
+ ⭕ If you are using vite/ webpack or any kind of bunlder then you don't need to add this 
+
 ```json
     "build": " npx tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
     "build-p": "postcss ./src/tailwind.css  -o ./public/style.css -w"
@@ -91,25 +98,31 @@ module.exports = {
 #### Run Tailwind CSS by post CSS 
 
 ```
-npm run build -p 
+npm run build-p 
 ```
 
 
 # Automatic Class Sorting with Prettier
- #### install prettier Extension from VS Code Marketplace   Or using CLI command 
+
+(![tailwidcss](https://user-images.githubusercontent.com/87494463/173291263-85abbe88-a8dc-456f-9c80-4f643599abf1.png)
+)
+
+
+
+ ### install prettier Extension from VS Code Marketplace  and install on your project   using CLI command 
 ```
 npm install --save-dev prettier-plugin-tailwind-css
 ```
  ```
  yarn add -D prettier-plugin-tailwind-css
  ```
-----------
-## Using prettier with tailwind in your workspace 
+ 
+### Using prettier with tailwind in your workspace 
 ### Create a file in this name 
 ```
 .prettierrc.json
 ```
-## use this command to run pretteir in your project (for all file use a dot. or use your file name)
+###  use this command to run pretteir in your project (for all file use a dot. or use your file name)
 ```
 npx prettier --write . 
 ```
