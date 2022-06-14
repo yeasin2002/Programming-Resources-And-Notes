@@ -33,7 +33,7 @@ npx tailwindcss init -p
 ###After creating postcss.config.json file add {$this} code in there
 
 ```js
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
   plugins: {
     tailwindcss: {},
@@ -73,6 +73,8 @@ module.exports = {
 ### Add the paths to all of your template files in your **tailwind.config.js** file.
 
 ```javaScript
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   // no need this from here this are for example  , just need to add this path 
@@ -104,8 +106,8 @@ npm run build-p
 
 # Automatic Class Sorting with Prettier
 
-(![tailwidcss](https://user-images.githubusercontent.com/87494463/173291263-85abbe88-a8dc-456f-9c80-4f643599abf1.png)
-)
+![tailwidcss](https://user-images.githubusercontent.com/87494463/173291263-85abbe88-a8dc-456f-9c80-4f643599abf1.png)
+
 
 
 
