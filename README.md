@@ -10,7 +10,7 @@ npm init -y
 npm install -D  postcss  postcss-cli autoprefixer cssnano cssnano-preset-advanced
 ```
 
-### use this **postcss.config.json** file
+### use this **postcss.config.js** file
 
 ```js 
 module.exports = {
