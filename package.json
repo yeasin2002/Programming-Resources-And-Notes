@@ -1,0 +1,27 @@
+{
+  "name": "programming-resources-and-notes",
+  "version": "1.0.0",
+  "description": "```\r npm init -y\r ```",
+  "main": "postcss.config.js",
+  "scripts": {
+    "build": "postcss ./src/style.pcss  -o ./public/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mdkawsarislam2002/Programming-Resources-And-Notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mdkawsarislam2002/Programming-Resources-And-Notes/issues"
+  },
+  "homepage": "https://github.com/Mdkawsarislam2002/Programming-Resources-And-Notes#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.12",
+    "cssnano-preset-advanced": "^5.3.8",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0"
+  }
+}
