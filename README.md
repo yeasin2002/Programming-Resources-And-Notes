@@ -1,8 +1,12 @@
 ![image](https://user-images.githubusercontent.com/87494463/173291569-6d5011de-a2b0-481e-9654-3faed32cf948.png)
 
+# Tailwindcss install Step by Step by postCSS
 
-# Tailwindcss install Stap by Stap by postCSS 
 ## install process
+
+<h4 style=" color: red; "> ⚠️ Warning </h4>
+
+</br>
 
 ##### initialize npm empty file
 
@@ -12,10 +16,11 @@ npm init -y
 
 ##### install tailwindcss by postcss with auto prefixed
 
+⚠️ if you are using any module bundler then you can remove this **cssnano cssnano-preset-advanced**
+
 ```
 npm install -D tailwindcss postcss autoprefixer cssnano cssnano-preset-advanced
 ```
-
 
 ##### create Tailwindcss config file
 
@@ -23,17 +28,20 @@ npm install -D tailwindcss postcss autoprefixer cssnano cssnano-preset-advanced
 npx tailwindcss init
 ```
 
-##### create postcss config file 
+##### create postcss config file
+
 ```
 npx tailwindcss init -p
 ```
 
+###After creating postcss.config.js file add {$this} code in there
 
-
-###After creating postcss.config.json file add {$this} code in there
+⚠️ if you are using any module bundler then you can remove this
+**cssnano: {
+preset: "advanced",
+},**
 
 ```js
-
 module.exports = {
   plugins: {
     tailwindcss: {},
@@ -43,31 +51,31 @@ module.exports = {
     },
   },
 };
-
 ```
 
-### use this code in **packege.json** file for _build_
+### use this code in **package.json** file for _build_
 
-#### create a public  folder  and create index.html file  and a **style.css** file 
-#### then  create a src folder  and on there create a **tailwind.css** file 
+#### create a public folder and create index.html file and a **style.css** file
 
-#### add this in your **tailwind.css** file 
-###### *(note: you can name it whatever you want and create or create all file where you want) *
+#### then create a src folder and on there create a **tailwind.css** file
+
+#### add this in your **tailwind.css** file
+
+###### _(note: you can name it whatever you want and create or create all file where you want) _
+
 ```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
 
+#### use this code on your scripts tag on your package.json file ( on scripts tag)
 
-#### use this code on your scripts tag on your  package.json file   ( on scripts tag)
-
-
- ⭕ If you are using vite/ webpack or any kind of bunlder then you don't need to add this 
+⚠️ If You Are using Vite/ Webpack/ RollUp or any kind of Module Bundler then you do not need to use this code
 
 ```json
-    "build": " npx tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
-    "build-p": "postcss ./src/tailwind.css  -o ./public/style.css -w"
+    "dev": " npx tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
+    "build": "postcss ./src/tailwind.css  -o ./public/style.css -w"
 ```
 
 ### Add the paths to all of your template files in your **tailwind.config.js** file.
@@ -77,7 +85,7 @@ module.exports = {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
-  // no need this from here this are for example  , just need to add this path 
+  // no need this from here this are for example  , just need to add this path
   theme: {
     extend: {},
   },
@@ -86,64 +94,69 @@ module.exports = {
 
 ```
 
-#### create .vscode folder  and in there  create settings.json file , add this in that file 
-###### this for tailwindCSS auto-complete and it's not going to show error 
+#### create .vscode folder and in there create settings.json file , add this in that file
+
+###### this for tailwindCSS auto-complete and it's not going to show error
 
 ```json
 {
   "css.validate": false,
   "tailwindCSS.emmetCompletions": true
 }
-
 ```
 
-#### Run Tailwind CSS by post CSS 
+#### Run Tailwind CSS by post CSS
 
 ```
-npm run build-p 
+npm run build-p
 ```
-
 
 # Automatic Class Sorting with Prettier
 
 ![tailwidcss](https://user-images.githubusercontent.com/87494463/173291263-85abbe88-a8dc-456f-9c80-4f643599abf1.png)
 
+### install prettier Extension from VS Code Marketplace and install on your project using CLI command
 
-
-
- ### install prettier Extension from VS Code Marketplace  and install on your project   using CLI command 
 ```
 npm install --save-dev prettier-plugin-tailwind-css
 ```
- ```
- yarn add -D prettier-plugin-tailwind-css
- ```
- 
-### Using prettier with tailwind in your workspace 
-### Create a file in this name 
+
+```
+yarn add -D prettier-plugin-tailwind-css
+```
+
+### Using prettier with tailwind in your workspace
+
+### Create a file in this name
+
 ```
 .prettierrc.json
 ```
-###  use this command to run pretteir in your project (for all file use a dot. or use your file name)
+
+### use this command to run pretteir in your project (for all file use a dot. or use your file name)
+
 ```
-npx prettier --write . 
+npx prettier --write .
 ```
 
-#### Add "removeDuplicatesClasses" in  Json file to remove duplicate class  
+#### Add "removeDuplicatesClasses" in Json file to remove duplicate class
+
 ```
 { "removeDuplicatesClasses": true }
 ```
---- 
 
-## More: 
+---
 
-####  Learning recources 
-[Official Doc](https://tailwindcss.com/docs/installation) - Learn With Sumit  (Bangla)
+## More:
+
+#### Learning recources
+
+[Official Doc](https://tailwindcss.com/docs/installation) - Learn With Sumit (Bangla)
 
 [Tailwind CSS Bangla Tutorial Series](https://youtube.com/playlist?list=PLHiZ4m8vCp9P23SqlHL0QAqiwS_oCofV2)
 [Tailwind Lab - Official Tailwindcss You Tube Channel ](https://www.youtube.com/c/TailwindLabs)
 
-#### 💙  Official resource
+#### 💙 Official resource
 
 - 💙 [Website](https://tailwindcss.com) - Official Tailwind CSS website.
 - 💙 [Repository](https://github.com/tailwindcss/tailwindcss) - Official Tailwind CSS repository.
@@ -158,7 +171,7 @@ npx prettier --write .
 
 ## IDE Extensions
 
- 💙 Official resource
+💙 Official resource
 
 - 💙 [IntelliSense for Code](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - IntelliSense extension for Visual Studio Code.
 - [Styled Snippets for Code](https://marketplace.visualstudio.com/items?itemName=muhajirframe.tailwind-styled-snippets) - Snippet extension for Visual Studio Code.
@@ -408,5 +421,3 @@ npx prettier --write .
 - 📁 [Material Tailwind Dashboard React](https://www.creative-tim.com/product/material-tailwind-dashboard-react) - Free Tailwind CSS and React admin template.
 - 📁 [Admin One Vue 3](https://github.com/justboil/admin-one-vue-tailwind) - Free Vue.js 3 Tailwind CSS admin template with Vite & Vue CLI support.
 - 📁 [Cruip](https://cruip.com/) - Beautifully designed HTML, React, and Vue.js templates.
-
-

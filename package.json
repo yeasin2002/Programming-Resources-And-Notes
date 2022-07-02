@@ -1,0 +1,28 @@
+{
+  "name": "programming-resources-and-notes",
+  "version": "1.0.0",
+  "description": "![image](https://user-images.githubusercontent.com/87494463/173291569-6d5011de-a2b0-481e-9654-3faed32cf948.png)",
+  "main": "index.js",
+  "scripts": {
+    "dev": " npx tailwindcss -i ./src/tailwind.css  -o ./public/style.css -w",
+    "build": "postcss ./src/tailwind.css  -o ./public/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mdkawsarislam2002/Programming-Resources-And-Notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mdkawsarislam2002/Programming-Resources-And-Notes/issues"
+  },
+  "homepage": "https://github.com/Mdkawsarislam2002/Programming-Resources-And-Notes#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.12",
+    "cssnano-preset-advanced": "^5.3.8",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
+  }
+}
