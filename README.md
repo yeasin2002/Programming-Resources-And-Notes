@@ -7,20 +7,21 @@ npm init -y
 ### Install postcss
 
 ```
-npm install -D  postcss  postcss-cli autoprefixer cssnano cssnano-preset-advanced
+npm install -D  postcss  postcss-cli autoprefixer postcss-import postcss-nesting
+
 ```
 
-### use this **postcss.config.js** file
+### use this **postcss.config.cjs** file 
 
 ```js 
 module.exports = {
-  plugins: {
-    autoprefixer: {},
-    cssnano: {
-      preset: "advanced",
-    },
-  },
+  plugins: [
+    require("postcss-import"),
+    require("autoprefixer"),
+    require("postcss-nesting"),
+  ],
 };
+
 
 ```
 
