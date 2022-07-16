@@ -1,12 +1,14 @@
 ###  Free Bangla Resources  ❤
-   #### ✅  [Courses](#Courses)
-   
-  #### ✅ [Books](#Books)
+   #### ✅ <a href="#courses">Courses</a>  
   
-  #### ✅ [API](#API)
+   
+  #### ✅ <a href="#books">Books</a>
+  
+  #### ✅ <a href="#api">API</a>
+
  
  ---
- # ✔ Courses
+ # ✔ <h1 class="courses">Courses</h1>
  
  ### Index
 
@@ -185,7 +187,7 @@
 
 ---
 
-# ✔ Books 
+# ✔<h1 class="books">Books</h1>
 ### Index
 
 -   [Algorithms](#algorithms)
@@ -244,16 +246,22 @@
 
 
 
-# ✔  API 
+# ✔   <h1 class="api">API</h1>
 
-🔴 292+ Free API 🤯 
-👉 https://publicapis.dev/
 
-🟡   Movie API:
-👉  https://www.themoviedb.org/
+🔴 API List 
+
+👉  [List of free api](https://github.com/public-apis/public-apis)
+
+👉  [292+ Free API ]( https://publicapis.dev/)
+
+👉  [Movie API:](https://www.themoviedb.org/)
+
 
 
 🔵 Basic API's 
-👉 https://apipheny.io/free-api/
-👉  https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+
+👉 [Basic Api 1](https://apipheny.io/free-api/)
+
+👉 [Basic Api 1](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/)
 
